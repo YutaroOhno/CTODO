@@ -1,0 +1,1 @@
+CREATE DATABASE todo_graphql_api_development;

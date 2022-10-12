@@ -1,0 +1,8 @@
+FROM node:16-alpine AS builder
+
+RUN apk add --no-cache libc6-compat
+WORKDIR /frontend
+ENV NEXT_TELEMETRY_DISABLED 1
+COPY ./frontend ./
+
+CMD ["npm", "run", "dev"]
